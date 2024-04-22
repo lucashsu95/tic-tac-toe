@@ -68,14 +68,14 @@ const resetGame = () => {
 </script>
 
 <template>
-  <h1>圈圈差差</h1>
-  {{ clickOrder }}
-  <label for="robotMod">邊緣人模式</label><input type="checkbox" v-model="robotMod" id="robotMod" />
-  <h2 v-show="isWin">{{ isWin }} Win!</h2>
-  <div class="box">
-    <div v-for="i in 9" :key="i" @click="userClick" :data-key="i"></div>
-  </div>
-  <button class="btn btn-primary mt-3" @click="resetGame">Reset</button>
+    <h1>圈圈差差</h1>
+    <label for="robotMod">邊緣人模式</label
+    ><input type="checkbox" v-model="robotMod" id="robotMod" />
+    <h2 v-show="isWin">{{ isWin }} Win!</h2>
+    <div class="box">
+      <div v-for="i in 9" :key="i" @click="userClick" :data-key="i"></div>
+    </div>
+    <button class="btn btn-primary mt-3" @click="resetGame">Reset</button>
 </template>
 
 <style>
